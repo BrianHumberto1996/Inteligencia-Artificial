@@ -1,0 +1,89 @@
+data=[9, 5, 9, 4, 3, 6, 7, 1, 2, 3, 9, 1, 2]
+
+
+
+print data
+
+dOrder=sorted(data)
+
+
+
+n=len(dOrder)
+
+middle=n/2
+
+
+
+# codigo para calcular la mediana
+
+if n%2==0:
+
+	mediana=(dOrder[middle+1] + dOrder[middle+2]) / 2
+
+else:
+
+	mediana=dOrder[middle+1]*1
+
+
+# codigo para calcular la media
+data=[1525, 257, 378, 9543, 7854, 152]
+
+
+
+print data
+
+dOrder=sorted(data)
+
+
+
+n=len(dOrder)
+
+middle=n/2
+
+
+
+
+print 'Mediana Aritmetica: ', round(sum(data)*1.0/n,2)
+
+
+# codigo para calcular la moda
+
+data=[9, 5, 9, 4, 3, 6, 7, 1, 2, 3, 9, 1, 2]
+
+
+
+print data
+
+dOrder=sorted(data)
+
+
+
+n=len(dOrder)
+
+middle=n/2
+
+repetir = 0                                                                         
+
+for i in data:                                                                              
+
+    aparece = data.count(i)                                                             
+
+    if aparece > repetir:                                                       
+
+        repetir = aparece                                                       
+
+                                                                                         
+
+moda = []                                                                               
+
+for i in data:                                                                              
+
+    aparece = data.count(i)                                                             
+
+    if aparece == repetir and i not in moda:                                   
+
+        moda.append(i)                                                                  
+
+                                                                                         
+
+print "moda:", moda
